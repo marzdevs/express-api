@@ -3,17 +3,17 @@ const app = express()
 const PORT = 8000
 
 const Princesses = {
-    'Snow White':{
+    'snow white':{
         'film': 'Snow White and the Seven Dwarfs',
         'age': 14,
         'enemy':'The Evil Queen'
     },
-    'Ariel':{
+    'ariel':{
         'film': 'The Little Mermaids',
         'age': 16,
         'enemy':'Ursula'
     },
-    'Rapunzel':{
+    'rapunzel':{
         'film': 'Tangled',
         'age': 18,
         'enemy':'Mother Gothel'
@@ -28,11 +28,11 @@ app.get('/', (request, response) => {
 
 // send json
 app.get('/api/:princessName', (request, response) =>{
-    const princessName = request.params.princessName
+    const princessName = request.params.princessName.toLowerCase()
     if(Princesses[princessName]){
         response.json(Princesses[princessName])
     }else{
-        response.json(Princesses['Rapunzel'])
+        response.json(Princesses['rapunzel'])
     }
 })
 
