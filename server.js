@@ -5,7 +5,7 @@ const PORT = 8000
 
 app.use(cors())
 
-app.use('/static', express.static('public'))
+app.use(express.static('public'))
 
 const Princesses = {
     'snow white':{
