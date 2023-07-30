@@ -33,7 +33,7 @@ app.get('/', (request, response) => {
 })
 
 // send json
-app.get('/:princessName', (request, response) =>{
+app.get('/api/:princessName', (request, response) =>{
     const princess = request.params.princessName.toLowerCase()
     if(Princesses[princess]){
         response.json(Princesses[princess])
