@@ -13,5 +13,3 @@ async function apiRequest(){
     }
     console.log(princessName);
 }
-
-console.log(princessName);
