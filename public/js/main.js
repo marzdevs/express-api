@@ -11,4 +11,7 @@ async function apiRequest(){
     }catch(error){
         console.log(error)
     }
+    console.log(princessName);
 }
+
+console.log(princessName);
