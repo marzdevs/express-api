@@ -14,7 +14,7 @@ const Princesses = {
         'enemy':'The Evil Queen'
     },
     'ariel':{
-        'film': 'The Little Mermaids',
+        'film': 'The Little Mermaid',
         'age': 16,
         'enemy':'Ursula'
     },
@@ -22,14 +22,15 @@ const Princesses = {
         'film': 'Tangled',
         'age': 18,
         'enemy':'Mother Gothel'
-    },
+    }
 
 }
+
 // get request
 app.get('/', (request, response) => {
     //direct url name
     response.sendFile(__dirname + '/public/index.html')
-    
+     
 })
 
 // send json
