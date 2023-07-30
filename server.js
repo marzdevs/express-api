@@ -5,7 +5,7 @@ const PORT = 8000
 
 app.use(cors())
 
-app.use(express.static('public'))
+app.use(express.static('./public'))
 
 const Princesses = {
     'snow white':{
@@ -28,7 +28,8 @@ const Princesses = {
 //get request
 app.get('/', (request, response) => {
     //direct url name
-    response.sendFile(__dirname + '/index.html')
+    response.sendFile(__dirname + '/public/index.html')
+    
 })
 
 // send json
