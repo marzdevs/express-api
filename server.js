@@ -33,10 +33,10 @@ app.get('/', (request, response) => {
 })
 
 // send json
-app.get('/api/:princessName', (request, response) =>{
-    const princessName = request.params.princessName.toLowerCase()
-    if(Princesses[princessName]){
-        response.json(Princesses[princessName])
+app.get('/:princessName', (request, response) =>{
+    const princess = request.params.princessName.toLowerCase()
+    if(Princesses[princess]){
+        response.json(Princesses[princess])
     }else{
         response.json(Princesses['rapunzel'])
     }
