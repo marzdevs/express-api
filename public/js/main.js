@@ -7,7 +7,7 @@ async function apiRequest(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h2').innerText = data.film.age.enemy
+        document.querySelector('h2').innerText = data.film
     }catch(error){
         console.log(error)
     }
