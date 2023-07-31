@@ -8,6 +8,7 @@ app.use(cors())
 app.use(express.static('./public'))
 
 const Princesses = {
+    //snow white is an object
     'snow white':{
         'film': 'Snow White and the Seven Dwarfs',
         'age': 14,
@@ -34,8 +35,8 @@ app.get('/', (request, response) => {
 })
 
 // send json
-app.get('/api/:princessName', (request, response) =>{
-    const princess = request.params.princessName.toLowerCase()
+app.get('/api/:name', (request, response) =>{
+    const princess  = request.params.name.toLowerCase()
     if(Princesses[princess]){
         response.json(Princesses[princess])
     }else{
