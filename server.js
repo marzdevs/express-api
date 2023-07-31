@@ -12,7 +12,7 @@ const Princesses = {
         'film': 'Snow White and the Seven Dwarfs',
         'age': 14,
         'enemy':'The Evil Queen'
-    },
+    }, 
     'ariel':{
         'film': 'The Little Mermaid',
         'age': 16,
