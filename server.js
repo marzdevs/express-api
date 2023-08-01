@@ -5,6 +5,7 @@ const PORT = 8000
 
 app.use(cors())
 
+// any file in public folder will be served up. dont need an app.get or anything.
 app.use(express.static('./public'))
 
 const Princesses = {
