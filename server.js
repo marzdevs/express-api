@@ -28,7 +28,7 @@ const Princesses = {
 
 }
 
-// get request
+// get request on root route
 app.get('/', (request, response) => {
     //direct url name
     response.sendFile(__dirname + '/public/index.html')
